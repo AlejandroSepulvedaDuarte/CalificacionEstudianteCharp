@@ -40,6 +40,7 @@
             this.btnCalcular = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.lblResultado = new System.Windows.Forms.Label();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -131,7 +132,7 @@
             // btnCalcular
             // 
             this.btnCalcular.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(457, 242);
+            this.btnCalcular.Location = new System.Drawing.Point(454, 96);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(144, 61);
             this.btnCalcular.TabIndex = 9;
@@ -161,11 +162,23 @@
             this.lblResultado.Text = "resultado";
             this.lblResultado.Visible = false;
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.Location = new System.Drawing.Point(464, 242);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(144, 61);
+            this.btnLimpiar.TabIndex = 12;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnCalcular);
@@ -199,6 +212,7 @@
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblResultado;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }
 
